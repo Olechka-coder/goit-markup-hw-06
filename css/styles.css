@@ -820,10 +820,11 @@ input.visually-hidden:checked+.checkbox-label .checkbox-link{
     color: #ffffff;
 }
 
-/* .form-f{
+.form-foot{
     display: flex;
     gap: 24px;
-} */
+}
+
 
 .footer-input{
     width: 264px;
