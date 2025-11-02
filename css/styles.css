@@ -438,6 +438,19 @@ font-weight: 500;
 
 /* second-section */
 
+.box {
+    width: 200px;
+    height: 300px;
+    background-image: url('photo.png');
+    background-size: 200px 300px;
+    }
+
+@media (min-resolution: 192dpi) {
+    .box {
+        background-image: url('photo@2x.png');
+    }
+}
+
 .link:hover,
 .link:focus {
     background-color: #31d0aa;
@@ -545,6 +558,20 @@ img{
     width: 100%;
     height: auto;
 }
+
+.box {
+    width: 200px;
+    height: 300px;
+    background-image: url('photo.png');
+    background-size: 200px 300px;
+    }
+
+ @media (min-resolution: 192dpi) {
+     .box {
+         background-image: url('photo@2x.png');
+     }
+ }
+
 .picture{
 display: block;
 }
@@ -677,6 +704,8 @@ margin-bottom: 16px;
 .footer-container {
     display: flex;
     align-items: baseline;
+    gap: 72px 24px;
+    text-align: center;
    
 }
 
@@ -700,8 +729,14 @@ display: flex;
 }
 
 .footer-about{
-    margin-right: 120px;
+    margin-right: 0px;
     max-width: 400px;
+}
+
+@media only screen and (min-width: minwidthpx) {
+.footer-about{
+    margin-right: 120px;
+  }
 }
 
 .footer-title{
@@ -749,10 +784,17 @@ transform: translateY(0%);
 .icon{
     fill: #f4f4fd;
 }
-
-.footer-icon-container{
-    margin-right: 80px; 
+@media only screen and (min-width: 1158px) {
+.footer-icon-container {
+        margin-right: 80px;
+    }
+    
+  }
+.footer-about{
+    margin-right: 0px;
+    max-width: 400px;   
 }
+
 
 .footer-title {
     margin-bottom: 16px;
@@ -770,6 +812,8 @@ transform: translateY(0%);
 
 
 .footer-input {
+    display: flex;    
+    flex-direction: column;
     width: 264px;
     height: 40px;
     border: 1px solid #ffffff;
@@ -784,6 +828,7 @@ transform: translateY(0%);
 }
 
 .footer-button {
+    display: flex;
     min-width: 165px;
     height: 40px;
     display: flex;
@@ -800,6 +845,9 @@ transform: translateY(0%);
     border: none;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button{
+    flex-shrink: 0;
 }
 
 .footer-button:hover,
