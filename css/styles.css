@@ -809,6 +809,10 @@ transform: translateY(0%);
     gap: 24px;
 }
 
+.footer-form
+{display: flex;    
+    flex-direction: column;}
+
 
 .footer-input {
     display: flex;    
