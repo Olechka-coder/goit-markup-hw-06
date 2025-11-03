@@ -294,6 +294,12 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 }
+@media only screen and (min-width: minwidthpx) {
+.main-section{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/people-office@2x.jpg");
+  }
+}
 
 .main-title-but:hover,
 .main-title-but:focus{
@@ -361,6 +367,7 @@ text-transform: capitalize;
 color: #2e2f42;
 }
 .paragraph-title{
+
 margin-bottom: 8px;
 font-weight: 500;
 font-size: 20px;
